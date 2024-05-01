@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */; };
+		F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1252BE2445F0033C7C2 /* ContentView.swift */; };
+		F388E1282BE244600033C7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F388E1272BE244600033C7C2 /* Assets.xcassets */; };
+		F388E12B2BE244600033C7C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F388E12A2BE244600033C7C2 /* Preview Assets.xcassets */; };
+		F388E1352BE244600033C7C2 /* yumemicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1342BE244600033C7C2 /* yumemicodingTests.swift */; };
+		F388E13F2BE244600033C7C2 /* yumemicodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */; };
+		F388E1412BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F388E1312BE244600033C7C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F388E1182BE2445F0033C7C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F388E11F2BE2445F0033C7C2;
+			remoteInfo = yumemicoding;
+		};
+		F388E13B2BE244600033C7C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F388E1182BE2445F0033C7C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F388E11F2BE2445F0033C7C2;
+			remoteInfo = yumemicoding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F388E1202BE2445F0033C7C2 /* yumemicoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yumemicoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingApp.swift; sourceTree = "<group>"; };
+		F388E1252BE2445F0033C7C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F388E1272BE244600033C7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F388E12A2BE244600033C7C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F388E1302BE244600033C7C2 /* yumemicodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yumemicodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F388E1342BE244600033C7C2 /* yumemicodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingTests.swift; sourceTree = "<group>"; };
+		F388E13A2BE244600033C7C2 /* yumemicodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yumemicodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITests.swift; sourceTree = "<group>"; };
+		F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F388E11D2BE2445F0033C7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E12D2BE244600033C7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E1372BE244600033C7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F388E1172BE2445F0033C7C2 = {
+			isa = PBXGroup;
+			children = (
+				F388E1222BE2445F0033C7C2 /* yumemicoding */,
+				F388E1332BE244600033C7C2 /* yumemicodingTests */,
+				F388E13D2BE244600033C7C2 /* yumemicodingUITests */,
+				F388E1212BE2445F0033C7C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F388E1212BE2445F0033C7C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F388E1202BE2445F0033C7C2 /* yumemicoding.app */,
+				F388E1302BE244600033C7C2 /* yumemicodingTests.xctest */,
+				F388E13A2BE244600033C7C2 /* yumemicodingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F388E1222BE2445F0033C7C2 /* yumemicoding */ = {
+			isa = PBXGroup;
+			children = (
+				F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */,
+				F388E1252BE2445F0033C7C2 /* ContentView.swift */,
+				F388E1272BE244600033C7C2 /* Assets.xcassets */,
+				F388E1292BE244600033C7C2 /* Preview Content */,
+			);
+			path = yumemicoding;
+			sourceTree = "<group>";
+		};
+		F388E1292BE244600033C7C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F388E12A2BE244600033C7C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F388E1332BE244600033C7C2 /* yumemicodingTests */ = {
+			isa = PBXGroup;
+			children = (
+				F388E1342BE244600033C7C2 /* yumemicodingTests.swift */,
+			);
+			path = yumemicodingTests;
+			sourceTree = "<group>";
+		};
+		F388E13D2BE244600033C7C2 /* yumemicodingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */,
+				F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */,
+			);
+			path = yumemicodingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F388E11F2BE2445F0033C7C2 /* yumemicoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F388E1442BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicoding" */;
+			buildPhases = (
+				F388E11C2BE2445F0033C7C2 /* Sources */,
+				F388E11D2BE2445F0033C7C2 /* Frameworks */,
+				F388E11E2BE2445F0033C7C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yumemicoding;
+			productName = yumemicoding;
+			productReference = F388E1202BE2445F0033C7C2 /* yumemicoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F388E12F2BE244600033C7C2 /* yumemicodingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F388E1472BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicodingTests" */;
+			buildPhases = (
+				F388E12C2BE244600033C7C2 /* Sources */,
+				F388E12D2BE244600033C7C2 /* Frameworks */,
+				F388E12E2BE244600033C7C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F388E1322BE244600033C7C2 /* PBXTargetDependency */,
+			);
+			name = yumemicodingTests;
+			productName = yumemicodingTests;
+			productReference = F388E1302BE244600033C7C2 /* yumemicodingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F388E1392BE244600033C7C2 /* yumemicodingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F388E14A2BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicodingUITests" */;
+			buildPhases = (
+				F388E1362BE244600033C7C2 /* Sources */,
+				F388E1372BE244600033C7C2 /* Frameworks */,
+				F388E1382BE244600033C7C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F388E13C2BE244600033C7C2 /* PBXTargetDependency */,
+			);
+			name = yumemicodingUITests;
+			productName = yumemicodingUITests;
+			productReference = F388E13A2BE244600033C7C2 /* yumemicodingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F388E1182BE2445F0033C7C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F388E11F2BE2445F0033C7C2 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					F388E12F2BE244600033C7C2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F388E11F2BE2445F0033C7C2;
+					};
+					F388E1392BE244600033C7C2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F388E11F2BE2445F0033C7C2;
+					};
+				};
+			};
+			buildConfigurationList = F388E11B2BE2445F0033C7C2 /* Build configuration list for PBXProject "yumemicoding" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F388E1172BE2445F0033C7C2;
+			productRefGroup = F388E1212BE2445F0033C7C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F388E11F2BE2445F0033C7C2 /* yumemicoding */,
+				F388E12F2BE244600033C7C2 /* yumemicodingTests */,
+				F388E1392BE244600033C7C2 /* yumemicodingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F388E11E2BE2445F0033C7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F388E12B2BE244600033C7C2 /* Preview Assets.xcassets in Resources */,
+				F388E1282BE244600033C7C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E12E2BE244600033C7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E1382BE244600033C7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F388E11C2BE2445F0033C7C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */,
+				F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E12C2BE244600033C7C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F388E1352BE244600033C7C2 /* yumemicodingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388E1362BE244600033C7C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F388E1412BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift in Sources */,
+				F388E13F2BE244600033C7C2 /* yumemicodingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F388E1322BE244600033C7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F388E11F2BE2445F0033C7C2 /* yumemicoding */;
+			targetProxy = F388E1312BE244600033C7C2 /* PBXContainerItemProxy */;
+		};
+		F388E13C2BE244600033C7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F388E11F2BE2445F0033C7C2 /* yumemicoding */;
+			targetProxy = F388E13B2BE244600033C7C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F388E1422BE244600033C7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F388E1432BE244600033C7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F388E1452BE244600033C7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yumemicoding/Preview Content\"";
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F388E1462BE244600033C7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yumemicoding/Preview Content\"";
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F388E1482BE244600033C7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yumemicoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yumemicoding";
+			};
+			name = Debug;
+		};
+		F388E1492BE244600033C7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yumemicoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yumemicoding";
+			};
+			name = Release;
+		};
+		F388E14B2BE244600033C7C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicodingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yumemicoding;
+			};
+			name = Debug;
+		};
+		F388E14C2BE244600033C7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.yumemicodingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yumemicoding;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F388E11B2BE2445F0033C7C2 /* Build configuration list for PBXProject "yumemicoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F388E1422BE244600033C7C2 /* Debug */,
+				F388E1432BE244600033C7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F388E1442BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F388E1452BE244600033C7C2 /* Debug */,
+				F388E1462BE244600033C7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F388E1472BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicodingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F388E1482BE244600033C7C2 /* Debug */,
+				F388E1492BE244600033C7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F388E14A2BE244600033C7C2 /* Build configuration list for PBXNativeTarget "yumemicodingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F388E14B2BE244600033C7C2 /* Debug */,
+				F388E14C2BE244600033C7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F388E1182BE2445F0033C7C2 /* Project object */;
+}
