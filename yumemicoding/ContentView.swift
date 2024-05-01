@@ -9,34 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-//            NavigationLink(destination: ExampleView()) {
-//                Rectangle()
-//                    .frame(width: 200, height: 100)
-//                    .foregroundStyle(.purple.gradient)
-//                    .cornerRadius(10)
-//                    .overlay(Text("占う").font(.title).foregroundStyle(.white))
-//            }
-            
-            NavigationLink {
-                ExampleView()
-            } label: {
-                Rectangle()
+        NavigationStack {
+            NavigationLink(destination: EmptyView()) {
+                Capsule()
                     .frame(width: 200, height: 100)
                     .foregroundStyle(.purple.gradient)
                     .cornerRadius(10)
-                    .overlay(Text("占う").font(.title).foregroundStyle(.white))
+                    .overlay(Text("占う").font(.largeTitle).foregroundStyle(.white))
             }
+            .padding()
         }
         .padding()
-    }
-}
-
-struct ExampleView: View {
-    var body: some View {
-        VStack {
-            Text("navigation")
-        }
     }
 }
 
@@ -44,6 +27,3 @@ struct ExampleView: View {
     ContentView()
 }
 
-#Preview {
-    ExampleView()
-}
