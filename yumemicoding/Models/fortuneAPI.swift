@@ -34,9 +34,19 @@ class ResponseStatus: Codable {
         case logoURL = "logo_url"
         case brief
     }
+    
+    init() {
+        self.name = ""
+        self.capital = ""
+        self.citizenDay = nil
+        self.hasCoastLine = false
+        self.logoURL = ""
+        self.brief = ""
+    }
 }
 
-extension ResponseStatus {
+class FortuneAPIViewController: ObservableObject {
+    @Published var responseStatus = ResponseStatus()
     
     func getResponse(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
@@ -56,7 +66,7 @@ extension ResponseStatus {
                 
             do {
                 let decoder = JSONDecoder()
-                let responceStatus = try decoder.decode(ResponseStatus.self, from: data)
+                self.responseStatus = try decoder.decode(ResponseStatus.self, from: data)
             } catch {}
         }.resume()
     }
