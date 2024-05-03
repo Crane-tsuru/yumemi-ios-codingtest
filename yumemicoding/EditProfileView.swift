@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct InputParameterView: View {
+struct EditProfileView: View {
     @State var name = ""
     @State var birthday = Date()
     @State var bloodType = ""
-    
     @State var bloodSelection = 0
     
-    let bloodTypes = ["A", "AB", "B", "O"]
+    @Binding var editSheet: Bool
     
     @Environment(\.modelContext) private var modelContext
     
@@ -61,6 +60,7 @@ struct InputParameterView: View {
             
             Button(action: {
                 modelContext.insert(MyProfile(name: name, birthday: birthday.getYearMonthDay(), bloodType: bloodTypes[bloodSelection]))
+                editSheet = false
             }) {
                 Text("保存")
             }.disabled(name == "")
@@ -70,5 +70,5 @@ struct InputParameterView: View {
 }
 
 #Preview {
-    InputParameterView()
+    EditProfileView(editSheet: .constant(true))
 }

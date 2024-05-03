@@ -9,19 +9,16 @@ import SwiftUI
 import SwiftData
 
 struct ProfileListView: View {
-    @Query private var statusList: [MyProfile]
+    @Query private var profileList: [MyProfile]
     @State var editSheet = false
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(statusList) { status in
-                    NavigationLink(destination: InputParameterView(
-                        name: status.name,
-                        birthday: status.birthday.getDate(),
-                        bloodType: status.bloodType)) {
-                            Text(status.name)
-                        }
+                ForEach(profileList) { profile in
+                    NavigationLink(destination: ProfileDetailView(myProfile: profile)) {
+                            Text(profile.name)
+                    }
                 }
             }
             .navigationBarTitle("プロフィール")
@@ -31,7 +28,7 @@ struct ProfileListView: View {
                 Image(systemName: "plus").padding().scaleEffect(1.3)
             })
         }.sheet(isPresented: $editSheet) {
-            InputParameterView()
+            EditProfileView(editSheet: $editSheet)
         }
     }
 }

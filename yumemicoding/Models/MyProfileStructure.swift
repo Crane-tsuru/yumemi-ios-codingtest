@@ -47,3 +47,4 @@ class MyProfile: ObservableObject {
     }
 }
 
+let bloodTypes = ["A", "AB", "B", "O"]
