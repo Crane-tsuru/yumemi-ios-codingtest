@@ -12,12 +12,6 @@ class MonthDay: Codable {
     let day: Int
 }
 
-class YearMonthDay: Codable {
-    let year: Int
-    let month: Int
-    let day: Int
-}
-
 class ResponseStatus: Codable {
     let name: String
     let capital: String
