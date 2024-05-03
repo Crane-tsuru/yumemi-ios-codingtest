@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
+            
+            Spacer()
+            
             NavigationLink(destination: EmptyView()) {
                 Capsule()
                     .frame(width: 200, height: 100)
@@ -18,6 +21,14 @@ struct ContentView: View {
                     .overlay(Text("占う").font(.largeTitle).foregroundStyle(.white))
             }
             .padding()
+            
+            NavigationLink(destination: InputParameterView()) {
+                Label("プロフィール編集", systemImage: "gearshape")
+            }
+            .padding()
+            .scaleEffect(1.2)
+            
+            Spacer()
         }
         .padding()
     }
