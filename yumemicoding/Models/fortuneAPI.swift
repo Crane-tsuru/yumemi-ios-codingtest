@@ -48,7 +48,7 @@ class ResponseStatus: Codable {
 class FortuneAPIViewController: ObservableObject {
     @Published var responseStatus = ResponseStatus()
     
-    func getResponse(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
+    private func getResponse(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
         var request = URLRequest(url: url)
 
