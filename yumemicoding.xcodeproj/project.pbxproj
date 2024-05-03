@@ -10,9 +10,11 @@
 		F320B04A2BE3145F00B91285 /* InputParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0492BE3145F00B91285 /* InputParameterView.swift */; };
 		F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04C2BE31A1300B91285 /* DateRange.swift */; };
 		F320B04F2BE3898D00B91285 /* fortuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04E2BE3898D00B91285 /* fortuneAPI.swift */; };
-		F320B0512BE47FEA00B91285 /* MyStatusStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0502BE47FEA00B91285 /* MyStatusStructure.swift */; };
+		F320B0512BE47FEA00B91285 /* MyProfileStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */; };
 		F320B0532BE4ABE800B91285 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0522BE4ABE800B91285 /* ResultDetailView.swift */; };
 		F320B0572BE4E45700B91285 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0562BE4E45700B91285 /* ProfileListView.swift */; };
+		F320B0592BE5241F00B91285 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0582BE5241F00B91285 /* DateExtension.swift */; };
+		F320B05D2BE52C8B00B91285 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B05C2BE52C8B00B91285 /* ProfileDetailView.swift */; };
 		F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */; };
 		F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1252BE2445F0033C7C2 /* ContentView.swift */; };
 		F388E1282BE244600033C7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F388E1272BE244600033C7C2 /* Assets.xcassets */; };
@@ -43,9 +45,11 @@
 		F320B0492BE3145F00B91285 /* InputParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParameterView.swift; sourceTree = "<group>"; };
 		F320B04C2BE31A1300B91285 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
 		F320B04E2BE3898D00B91285 /* fortuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneAPI.swift; sourceTree = "<group>"; };
-		F320B0502BE47FEA00B91285 /* MyStatusStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusStructure.swift; sourceTree = "<group>"; };
+		F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileStructure.swift; sourceTree = "<group>"; };
 		F320B0522BE4ABE800B91285 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 		F320B0562BE4E45700B91285 /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		F320B0582BE5241F00B91285 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F320B05C2BE52C8B00B91285 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
 		F388E1202BE2445F0033C7C2 /* yumemicoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yumemicoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingApp.swift; sourceTree = "<group>"; };
 		F388E1252BE2445F0033C7C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,7 +92,8 @@
 			children = (
 				F320B04C2BE31A1300B91285 /* DateRange.swift */,
 				F320B04E2BE3898D00B91285 /* fortuneAPI.swift */,
-				F320B0502BE47FEA00B91285 /* MyStatusStructure.swift */,
+				F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */,
+				F320B0582BE5241F00B91285 /* DateExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				F320B04B2BE31A0400B91285 /* Models */,
 				F388E1252BE2445F0033C7C2 /* ContentView.swift */,
 				F320B0562BE4E45700B91285 /* ProfileListView.swift */,
+				F320B05C2BE52C8B00B91285 /* ProfileDetailView.swift */,
 				F320B0492BE3145F00B91285 /* InputParameterView.swift */,
 				F320B0522BE4ABE800B91285 /* ResultDetailView.swift */,
 				F388E1272BE244600033C7C2 /* Assets.xcassets */,
@@ -285,10 +291,12 @@
 			files = (
 				F320B0572BE4E45700B91285 /* ProfileListView.swift in Sources */,
 				F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */,
-				F320B0512BE47FEA00B91285 /* MyStatusStructure.swift in Sources */,
+				F320B0512BE47FEA00B91285 /* MyProfileStructure.swift in Sources */,
 				F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */,
+				F320B0592BE5241F00B91285 /* DateExtension.swift in Sources */,
 				F320B0532BE4ABE800B91285 /* ResultDetailView.swift in Sources */,
 				F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */,
+				F320B05D2BE52C8B00B91285 /* ProfileDetailView.swift in Sources */,
 				F320B04F2BE3898D00B91285 /* fortuneAPI.swift in Sources */,
 				F320B04A2BE3145F00B91285 /* InputParameterView.swift in Sources */,
 			);

@@ -14,6 +14,6 @@ struct yumemicodingApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: MyStatus.self)
+        .modelContainer(for: MyProfile.self)
     }
 }

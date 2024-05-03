@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var myStatus: MyStatus
+    @EnvironmentObject var myStatus: MyProfile
     
     @State var openSheet = false
     

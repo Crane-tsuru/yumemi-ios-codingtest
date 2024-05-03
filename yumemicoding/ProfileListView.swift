@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ProfileListView: View {
-    @Query private var statusList: [MyStatus]
+    @Query private var statusList: [MyProfile]
     @State var editSheet = false
     
     var body: some View {
@@ -18,7 +18,7 @@ struct ProfileListView: View {
                 ForEach(statusList) { status in
                     NavigationLink(destination: InputParameterView(
                         name: status.name,
-                        birthDay: status.birthday.getDate(),
+                        birthday: status.birthday.getDate(),
                         bloodType: status.bloodType)) {
                             Text(status.name)
                         }
