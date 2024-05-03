@@ -12,10 +12,13 @@ struct ResultDetailView: View {
     @State var showBrief = false
     
     var body: some View {
+        
         ScrollView {
+            
             AsyncImage(url: URL(string: responseStatus.logoURL))
             
             List {
+                
                 Text("都道府県名: \(responseStatus.name)")
                 Text("県庁所在地: \(responseStatus.capital)")
                 
@@ -35,10 +38,11 @@ struct ResultDetailView: View {
                         Text(responseStatus.brief)
                     }
                 }
+                
             }
             
-            
         }
+        
     }
 }
 

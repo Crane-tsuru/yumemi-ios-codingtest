@@ -7,17 +7,30 @@
 
 import Foundation
 
-struct YearMonthDay {
+class YearMonthDay {
     var year: Int
     var month: Int
     var day: Int
+    
+    init(year: Int, month: Int, day: Int) {
+        self.year = year
+        self.month = month
+        self.day = day
+    }
 }
 
-struct MyStatus {
+class MyStatus: ObservableObject {
     var name: String
     var birthday: YearMonthDay
     var bloodType: String
     var today = Date()
+    
+    init(name: String, birthday: YearMonthDay, bloodType: String, today: Date = Date()) {
+        self.name = name
+        self.birthday = birthday
+        self.bloodType = bloodType
+        self.today = today
+    }
 }
 
 
