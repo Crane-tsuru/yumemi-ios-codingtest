@@ -10,12 +10,28 @@ import SwiftData
 
 struct ProfileListView: View {
     @Query private var statusList: [MyStatus]
+    @State var editSheet = false
     
     var body: some View {
-        List {
-            ForEach(statusList) { status in
-                Text(status.name)
+        NavigationStack {
+            List {
+                ForEach(statusList) { status in
+                    NavigationLink(destination: InputParameterView(
+                        name: status.name,
+                        birthDay: status.birthday.getDate(),
+                        bloodType: status.bloodType)) {
+                            Text(status.name)
+                        }
+                }
             }
+            .navigationBarTitle("プロフィール")
+            .navigationBarItems(trailing: Button(action: {
+                editSheet = true
+            }) {
+                Image(systemName: "plus").padding().scaleEffect(1.3)
+            })
+        }.sheet(isPresented: $editSheet) {
+            InputParameterView()
         }
     }
 }

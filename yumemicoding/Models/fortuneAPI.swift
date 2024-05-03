@@ -39,6 +39,7 @@ class ResponseStatus: Codable {
     }
 }
 
+
 class FortuneAPIViewController: ObservableObject {
     @Published var responseStatus = ResponseStatus()
     

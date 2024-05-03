@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InputParameterView: View {
     @State var name = ""
-    @State var theDate = Date()
+    @State var birthDay = Date()
     @State var bloodType = ""
     
     @State var bloodSelection = 0
@@ -39,7 +39,7 @@ struct InputParameterView: View {
                 Text("誕生日").padding()
                 DatePicker(
                     "",
-                    selection: $theDate,
+                    selection: $birthDay,
                     in: dateRange,
                     displayedComponents: [.date]
                 )
@@ -60,10 +60,10 @@ struct InputParameterView: View {
             }.padding()
             
             Button(action: {
-                modelContext.insert(MyStatus(name: name, birthday: theDate.getYearMonthDay(), bloodType: bloodTypes[bloodSelection]))
+                modelContext.insert(MyStatus(name: name, birthday: birthDay.getYearMonthDay(), bloodType: bloodTypes[bloodSelection]))
             }) {
                 Text("保存")
-            }
+            }.disabled(name == "")
         }
         
     }

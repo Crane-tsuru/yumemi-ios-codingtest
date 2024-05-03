@@ -28,8 +28,8 @@ struct ContentView: View {
                     .overlay(Text("占う").font(.largeTitle).foregroundStyle(.white))}
             ).padding()
             
-            NavigationLink(destination: InputParameterView()) {
-                Label("プロフィール編集", systemImage: "gearshape")
+            NavigationLink(destination: ProfileListView()) {
+                Label("プロフィール設定", systemImage: "gearshape")
             }
             .padding()
             .scaleEffect(1.2)

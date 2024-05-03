@@ -119,9 +119,9 @@
 				F388E1232BE2445F0033C7C2 /* yumemicodingApp.swift */,
 				F320B04B2BE31A0400B91285 /* Models */,
 				F388E1252BE2445F0033C7C2 /* ContentView.swift */,
+				F320B0562BE4E45700B91285 /* ProfileListView.swift */,
 				F320B0492BE3145F00B91285 /* InputParameterView.swift */,
 				F320B0522BE4ABE800B91285 /* ResultDetailView.swift */,
-				F320B0562BE4E45700B91285 /* ProfileListView.swift */,
 				F388E1272BE244600033C7C2 /* Assets.xcassets */,
 				F388E1292BE244600033C7C2 /* Preview Content */,
 			);
