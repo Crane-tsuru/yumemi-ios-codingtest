@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
+@Model
 class YearMonthDay {
     var year: Int
     var month: Int
@@ -19,17 +21,16 @@ class YearMonthDay {
     }
 }
 
+@Model
 class MyStatus: ObservableObject {
     var name: String
     var birthday: YearMonthDay
     var bloodType: String
-    var today = Date()
     
-    init(name: String, birthday: YearMonthDay, bloodType: String, today: Date = Date()) {
+    init(name: String, birthday: YearMonthDay, bloodType: String) {
         self.name = name
         self.birthday = birthday
         self.bloodType = bloodType
-        self.today = today
     }
 }
 

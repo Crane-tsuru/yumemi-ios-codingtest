@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct yumemicodingApp: App {
@@ -13,5 +14,6 @@ struct yumemicodingApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: MyStatus.self)
     }
 }

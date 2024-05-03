@@ -48,7 +48,7 @@ class FortuneAPIViewController: ObservableObject {
 
         request.httpMethod = "POST"
         request.addValue("v1", forHTTPHeaderField: "API-Version")
-        request.httpBody = "name=\(name)&birthday=\(birthday)&blood_type=\(bloodType)&today=\(today)".data(using: .utf8)
+        request.httpBody = "name=\(name)&birthday=\(birthday)&blood_type=\(bloodType.lowercased())&today=\(today)".data(using: .utf8)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {

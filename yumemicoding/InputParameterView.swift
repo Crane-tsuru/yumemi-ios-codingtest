@@ -14,13 +14,22 @@ struct InputParameterView: View {
     
     @State var bloodSelection = 0
     
+    let bloodTypes = ["A", "AB", "B", "O"]
+    
+    @Environment(\.modelContext) private var modelContext
+    
     var body: some View {
+        
         ScrollView {
+            
             Text("以下の項目を入力してください")
                 .padding()
                 .font(.title2)
+            
             Spacer()
+            
             VStack(alignment: .leading) {
+                
                 HStack {
                     Text("名前")
                     TextField("山田太郎", text: $name)
@@ -41,14 +50,22 @@ struct InputParameterView: View {
                 HStack {
                     Text("血液型")
                     Picker("血液型" ,selection: $bloodSelection) {
-                        Text("A").tag(0)
-                        Text("AB").tag(1)
-                        Text("B").tag(2)
-                        Text("O").tag(3)
+                        Text(bloodTypes[0]).tag(0)
+                        Text(bloodTypes[1]).tag(1)
+                        Text(bloodTypes[2]).tag(2)
+                        Text(bloodTypes[3]).tag(3)
                     }
                 }.padding()
+                
             }.padding()
+            
+            Button(action: {
+                modelContext.insert(MyStatus(name: name, birthday: theDate.getYearMonthDay(), bloodType: bloodTypes[bloodSelection]))
+            }) {
+                Text("保存")
+            }
         }
+        
     }
 }
 
