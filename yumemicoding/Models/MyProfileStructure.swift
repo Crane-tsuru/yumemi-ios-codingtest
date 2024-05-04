@@ -35,7 +35,7 @@ extension YearMonthDay {
 }
 
 @Model
-class MyProfile: ObservableObject {
+class MyProfile: ObservableObject, Equatable {
     var name: String
     var birthday: YearMonthDay
     var bloodType: String
@@ -44,6 +44,12 @@ class MyProfile: ObservableObject {
         self.name = name
         self.birthday = birthday
         self.bloodType = bloodType
+    }
+}
+
+extension MyProfile {
+    static func emptyProfile() -> MyProfile {
+        MyProfile(name: "", birthday: YearMonthDay(year: 0, month: 0, day: 0), bloodType: "")
     }
 }
 
