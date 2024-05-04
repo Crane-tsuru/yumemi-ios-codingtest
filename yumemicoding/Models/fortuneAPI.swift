@@ -43,13 +43,14 @@ class ResponseStatus: Codable {
 class FortuneAPIViewController: ObservableObject {
     @Published var responseStatus = ResponseStatus()
     
-    private func getResponse(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
+    func getResponse(profile: MyProfile) {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
         var request = URLRequest(url: url)
+        let today = Date().getYearMonthDay()
 
         request.httpMethod = "POST"
         request.addValue("v1", forHTTPHeaderField: "API-Version")
-        request.httpBody = "name=\(name)&birthday=\(birthday)&blood_type=\(bloodType.lowercased())&today=\(today)".data(using: .utf8)
+        request.httpBody = "name=\(profile.name)&birthday=\(profile.birthday)&blood_type=\(profile.bloodType.lowercased())&today=\(today)".data(using: .utf8)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {

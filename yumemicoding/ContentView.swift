@@ -14,13 +14,14 @@ struct ContentView: View {
             
             Spacer()
             
-            NavigationLink(destination: ProfileListView()) {
+            NavigationLink(destination: SelectNameFortuneView()) {
                 Capsule()
                 .frame(width: 200, height: 100)
                 .foregroundStyle(.purple.gradient)
                 .cornerRadius(10)
                 .overlay(Text("占う").font(.largeTitle).foregroundStyle(.white))
             }
+            .padding()
             
             
             NavigationLink(destination: ProfileListView()) {
