@@ -11,6 +11,9 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
+           
+            // こいつが悪い？
+//            Text("\(Date().getYearMonthDay().year)")
             
             Spacer()
             

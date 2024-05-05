@@ -57,6 +57,7 @@ struct ResultDetailView: View {
         VStack {
             
             AsyncImage(url: URL(string: fortuneAPIViewController.responseStatus.logoURL))
+                .scaleEffect(0.75)
             
             List {
                 

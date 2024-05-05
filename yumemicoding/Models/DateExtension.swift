@@ -10,11 +10,9 @@ import Foundation
 extension Date {
     
     func getYearMonthDay() -> YearMonthDay {
-        let calendar = Calendar(identifier: .gregorian)
-        let year = calendar.component(.year, from: self)
-        let month = calendar.component(.month, from: self)
-        let day = calendar.component(.day, from: self)
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: self)
         
-        return YearMonthDay(year: year, month: month, day: day)
+        return YearMonthDay(year: components.year ?? 0, month: components.month ?? 0, day: components.day ?? 0)
     }
 }

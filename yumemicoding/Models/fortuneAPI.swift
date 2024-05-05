@@ -46,17 +46,21 @@ class FortuneAPIViewController: ObservableObject {
     func getResponse(profile: MyProfile) async {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
         var request = URLRequest(url: url)
-        let today = Date().getYearMonthDay()
 
         request.httpMethod = "POST"
         request.addValue("v1", forHTTPHeaderField: "API-Version")
+        let today = Date().getYearMonthDay()
+        
+        
         request.httpBody = "name=\(profile.name)&birthday=\(profile.birthday)&blood_type=\(profile.bloodType.lowercased())&today=\(today)".data(using: .utf8)
+        
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 print(error)
                 return
             }
+            
             
             guard let data = data else {
                 print("data = nil")
@@ -67,7 +71,9 @@ class FortuneAPIViewController: ObservableObject {
                 let decoder = JSONDecoder()
                 self.responseStatus = try decoder.decode(ResponseStatus.self, from: data)
                 print("success")
-            } catch {}
+            } catch {
+                print("error: \(error)")
+            }
         }.resume()
     }
 }
