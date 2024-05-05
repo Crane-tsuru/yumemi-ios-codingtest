@@ -59,7 +59,10 @@ struct EditProfileView: View {
             }.padding()
             
             Button(action: {
-                modelContext.insert(MyProfile(name: name, birthday: birthday.getYearMonthDay(), bloodType: bloodTypes[bloodSelection]))
+                modelContext.insert(MyProfile(
+                    name: name,
+                    birthday: birthday,
+                    bloodType: bloodTypes[bloodSelection]))
                 editSheet = false
             }) {
                 Text("保存")

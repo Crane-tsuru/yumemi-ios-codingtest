@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		F320B04A2BE3145F00B91285 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0492BE3145F00B91285 /* EditProfileView.swift */; };
 		F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04C2BE31A1300B91285 /* DateRange.swift */; };
-		F320B04F2BE3898D00B91285 /* fortuneAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04E2BE3898D00B91285 /* fortuneAPI.swift */; };
-		F320B0512BE47FEA00B91285 /* MyProfileStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */; };
+		F320B04F2BE3898D00B91285 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04E2BE3898D00B91285 /* APIResponse.swift */; };
+		F320B0512BE47FEA00B91285 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0502BE47FEA00B91285 /* MyProfile.swift */; };
 		F320B0532BE4ABE800B91285 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0522BE4ABE800B91285 /* ResultDetailView.swift */; };
 		F320B0572BE4E45700B91285 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0562BE4E45700B91285 /* ProfileListView.swift */; };
 		F320B0592BE5241F00B91285 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0582BE5241F00B91285 /* DateExtension.swift */; };
@@ -23,6 +23,7 @@
 		F388E1352BE244600033C7C2 /* yumemicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1342BE244600033C7C2 /* yumemicodingTests.swift */; };
 		F388E13F2BE244600033C7C2 /* yumemicodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */; };
 		F388E1412BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */; };
+		F3907B622BE7D198002B2609 /* APIBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3907B612BE7D198002B2609 /* APIBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,8 @@
 /* Begin PBXFileReference section */
 		F320B0492BE3145F00B91285 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F320B04C2BE31A1300B91285 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
-		F320B04E2BE3898D00B91285 /* fortuneAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneAPI.swift; sourceTree = "<group>"; };
-		F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileStructure.swift; sourceTree = "<group>"; };
+		F320B04E2BE3898D00B91285 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		F320B0502BE47FEA00B91285 /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
 		F320B0522BE4ABE800B91285 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 		F320B0562BE4E45700B91285 /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
 		F320B0582BE5241F00B91285 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		F388E13A2BE244600033C7C2 /* yumemicodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yumemicodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITests.swift; sourceTree = "<group>"; };
 		F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3907B612BE7D198002B2609 /* APIBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				F320B04C2BE31A1300B91285 /* DateRange.swift */,
-				F320B04E2BE3898D00B91285 /* fortuneAPI.swift */,
-				F320B0502BE47FEA00B91285 /* MyProfileStructure.swift */,
+				F320B04E2BE3898D00B91285 /* APIResponse.swift */,
+				F3907B612BE7D198002B2609 /* APIBody.swift */,
+				F320B0502BE47FEA00B91285 /* MyProfile.swift */,
 				F320B0582BE5241F00B91285 /* DateExtension.swift */,
 			);
 			path = Models;
@@ -292,16 +295,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3907B622BE7D198002B2609 /* APIBody.swift in Sources */,
 				F320B0572BE4E45700B91285 /* ProfileListView.swift in Sources */,
 				F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */,
-				F320B0512BE47FEA00B91285 /* MyProfileStructure.swift in Sources */,
+				F320B0512BE47FEA00B91285 /* MyProfile.swift in Sources */,
 				F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */,
 				F320B0592BE5241F00B91285 /* DateExtension.swift in Sources */,
 				F320B0532BE4ABE800B91285 /* ResultDetailView.swift in Sources */,
 				F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */,
 				F320B05F2BE642BD00B91285 /* SelectNameFortuneView.swift in Sources */,
 				F320B05D2BE52C8B00B91285 /* ProfileDetailView.swift in Sources */,
-				F320B04F2BE3898D00B91285 /* fortuneAPI.swift in Sources */,
+				F320B04F2BE3898D00B91285 /* APIResponse.swift in Sources */,
 				F320B04A2BE3145F00B91285 /* EditProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

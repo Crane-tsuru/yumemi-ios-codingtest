@@ -86,7 +86,7 @@ struct ResultDetailView: View {
         }
         .onAppear{
             Task {
-                await fortuneAPIViewController.getResponse(profile: profile)
+//                await fortuneAPIViewController.getResponse(profile: profile)
             }
         }
     }

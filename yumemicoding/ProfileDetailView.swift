@@ -15,7 +15,7 @@ struct ProfileDetailView: View {
         NavigationStack {
             List {
                 Text("name: \(myProfile.name)")
-                Text("誕生日: \(myProfile.birthday.year.description)年\(myProfile.birthday.month)月\(myProfile.birthday.day)日")
+                Text("誕生日: \(myProfile.birthday)")
                 Text("血液型: \(myProfile.bloodType)型")
             }
         }
@@ -26,7 +26,7 @@ struct ProfileDetailView: View {
         })
         .sheet(isPresented: $editSheet) {
             EditProfileView(name: myProfile.name,
-                            birthday: myProfile.birthday.getDate(),
+                            birthday: myProfile.birthday,
                             bloodType: myProfile.bloodType,
                             editSheet: $editSheet)
         }
