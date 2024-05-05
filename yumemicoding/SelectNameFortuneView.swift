@@ -13,6 +13,7 @@ struct SelectNameFortuneView: View {
     @Query private var profileList: [MyProfile]
     @State var openSheet = false
     
+    
     var body: some View {
         NavigationStack {
             List {
@@ -39,4 +40,5 @@ struct SelectNameFortuneView: View {
 
 #Preview {
     SelectNameFortuneView()
+        .modelContainer(for: MyProfile.self)
 }

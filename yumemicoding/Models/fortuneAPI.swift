@@ -43,7 +43,7 @@ class ResponseStatus: Codable {
 class FortuneAPIViewController: ObservableObject {
     @Published var responseStatus = ResponseStatus()
     
-    func getResponse(profile: MyProfile) {
+    func getResponse(profile: MyProfile) async {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
         var request = URLRequest(url: url)
         let today = Date().getYearMonthDay()
@@ -58,11 +58,15 @@ class FortuneAPIViewController: ObservableObject {
                 return
             }
             
-            guard let data = data else { return }
+            guard let data = data else {
+                print("data = nil")
+                return
+            }
                 
             do {
                 let decoder = JSONDecoder()
                 self.responseStatus = try decoder.decode(ResponseStatus.self, from: data)
+                print("success")
             } catch {}
         }.resume()
     }
