@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3019A332BE999E800A16CB9 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019A322BE999E800A16CB9 /* DateFormat.swift */; };
 		F320B04A2BE3145F00B91285 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B0492BE3145F00B91285 /* EditProfileView.swift */; };
 		F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04C2BE31A1300B91285 /* DateRange.swift */; };
 		F320B04F2BE3898D00B91285 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320B04E2BE3898D00B91285 /* APIResponse.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3019A322BE999E800A16CB9 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		F320B0492BE3145F00B91285 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F320B04C2BE31A1300B91285 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
 		F320B04E2BE3898D00B91285 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
@@ -94,11 +96,12 @@
 		F320B04B2BE31A0400B91285 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F320B04C2BE31A1300B91285 /* DateRange.swift */,
 				F320B04E2BE3898D00B91285 /* APIResponse.swift */,
 				F3907B612BE7D198002B2609 /* FortuneRequestBody.swift */,
 				F320B0502BE47FEA00B91285 /* MyProfile.swift */,
 				F320B0582BE5241F00B91285 /* DateExtension.swift */,
+				F320B04C2BE31A1300B91285 /* DateRange.swift */,
+				F3019A322BE999E800A16CB9 /* DateFormat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				F320B0512BE47FEA00B91285 /* MyProfile.swift in Sources */,
 				F320B04D2BE31A1300B91285 /* DateRange.swift in Sources */,
 				F320B0592BE5241F00B91285 /* DateExtension.swift in Sources */,
+				F3019A332BE999E800A16CB9 /* DateFormat.swift in Sources */,
 				F320B0532BE4ABE800B91285 /* ResultDetailView.swift in Sources */,
 				F388E1242BE2445F0033C7C2 /* yumemicodingApp.swift in Sources */,
 				F320B05F2BE642BD00B91285 /* SelectNameFortuneView.swift in Sources */,

@@ -64,11 +64,11 @@ final class API {
             
 //            print(String(data: data, encoding: .utf8) as Any) //debug
             
-//            if let httpResponse = response as? HTTPURLResponse {
-//                if 400 <= httpResponse.statusCode {
-//                    print("status code error")
-//                }
-//            }
+            if let httpResponse = response as? HTTPURLResponse {
+                if 400 <= httpResponse.statusCode {
+                    print("status code error")
+                }
+            }
             
             let fetchedResponse = try self.decoder.decode(ResponseStatus.self, from: data)
             return fetchedResponse
