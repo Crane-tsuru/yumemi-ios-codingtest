@@ -20,17 +20,21 @@ class YearMonthDay: Encodable {
 }
 
 
-
 struct Body: Encodable {
     let name: String
-    let birthday: String
+    let birthday: YearMonthDay
     let bloodType: String
     let today: YearMonthDay
     
-    init(name: String, birthday: String, bloodType: String, today: YearMonthDay) {
+    init(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
         self.name = name
         self.birthday = birthday
         self.bloodType = bloodType
         self.today = today
     }
+}
+
+func convertProfileToBody(myProfile: MyProfile) -> Body {
+    let today = Date().getYearMonthDay()
+    return Body(name: myProfile.name, birthday: myProfile.birthday.getYearMonthDay(), bloodType: myProfile.bloodType, today: today)
 }
