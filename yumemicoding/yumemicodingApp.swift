@@ -13,5 +13,6 @@ struct yumemicodingApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: MyProfile.self)
     }
 }
