@@ -60,7 +60,7 @@ final class API {
             request.httpBody = json
             
             // Decode
-            let (data, response) = try await URLSession.shared.data(for: request)
+            let (data, response) = try await URLSession.shared.data(for: request) // response is for debug
             
 //            print(String(data: data, encoding: .utf8) as Any) //debug
             
@@ -71,7 +71,6 @@ final class API {
 //            }
             
             let fetchedResponse = try self.decoder.decode(ResponseStatus.self, from: data)
-            print("success")
             return fetchedResponse
         } catch  {
             print("Error : \(error)")
