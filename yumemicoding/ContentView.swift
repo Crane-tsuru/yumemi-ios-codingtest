@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) private var colorScheme
     
     var body: some View {
         NavigationStack {
@@ -17,9 +18,10 @@ struct ContentView: View {
             NavigationLink(destination: SelectNameFortuneView()) {
                 Capsule()
                 .frame(width: 200, height: 100)
-                .foregroundStyle(.purple.gradient)
+                .foregroundStyle((colorScheme == .dark) ? .blue : .purple)
                 .cornerRadius(10)
-                .overlay(Text("占う").font(.largeTitle).foregroundStyle(.white))
+                .overlay(Text("占う")
+                    .font(.largeTitle).foregroundStyle(.white))
             }
             .padding()
             
