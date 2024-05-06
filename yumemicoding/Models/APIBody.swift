@@ -29,12 +29,12 @@ struct Body: Encodable {
     init(name: String, birthday: YearMonthDay, bloodType: String, today: YearMonthDay) {
         self.name = name
         self.birthday = birthday
-        self.bloodType = bloodType
+        self.bloodType = bloodType.lowercased()
         self.today = today
     }
 }
 
-func convertProfileToBody(myProfile: MyProfile) -> Body {
+@MainActor func convertProfileToBody(myProfile: MyProfile) -> Body {
     let today = Date().getYearMonthDay()
     return Body(name: myProfile.name, birthday: myProfile.birthday.getYearMonthDay(), bloodType: myProfile.bloodType, today: today)
 }

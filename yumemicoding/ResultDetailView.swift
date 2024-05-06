@@ -7,43 +7,6 @@
 
 import SwiftUI
 
-//struct ResultDetailView: View {
-//    @State var showBrief = false
-//    
-//    let responseStatus: ResponseStatus
-//    
-//    var body: some View {
-//        
-//        VStack {
-//            
-//            AsyncImage(url: URL(string: responseStatus.logoURL))
-//            
-//            List {
-//                
-//                Text("都道府県名: \(responseStatus.name)")
-//                Text("県庁所在地: \(responseStatus.capital)")
-//                
-//                if let citizenDay = responseStatus.citizenDay {
-//                    Text("県民の日: \(citizenDay)")
-//                } else {
-//                    Text("県民の日はありません")
-//                }
-//                
-//                Text("海岸線の有無: \(responseStatus.hasCoastLine ? "有" : "無")")
-//                VStack {
-//                    Toggle(isOn: $showBrief) {
-//                        Text("詳細を見る")
-//                    }
-//                    
-//                    if showBrief {
-//                        Text(responseStatus.brief)
-//                    }
-//                }
-//                
-//            }      
-//        }
-//    }
-//}
 
 struct ResultDetailView: View {
     @State var showBrief = false
@@ -56,7 +19,7 @@ struct ResultDetailView: View {
         
         VStack {
             
-            AsyncImage(url: URL(string: fortuneAPIViewController.responseStatus.logoURL))
+            AsyncImage(url: URL(string: fortuneAPIViewController.responseStatus.logoUrl))
                 .scaleEffect(0.75)
             
             List {
@@ -85,8 +48,9 @@ struct ResultDetailView: View {
             
         }
         .onAppear{
+            let APIBody = convertProfileToBody(myProfile: profile)
             Task {
-//                await fortuneAPIViewController.getResponse(profile: profile)
+                await fortuneAPIViewController.getResponse(body: APIBody)
             }
         }
     }
