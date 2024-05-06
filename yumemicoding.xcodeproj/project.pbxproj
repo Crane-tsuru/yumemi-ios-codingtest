@@ -23,7 +23,7 @@
 		F388E1352BE244600033C7C2 /* yumemicodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1342BE244600033C7C2 /* yumemicodingTests.swift */; };
 		F388E13F2BE244600033C7C2 /* yumemicodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */; };
 		F388E1412BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */; };
-		F3907B622BE7D198002B2609 /* APIBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3907B612BE7D198002B2609 /* APIBody.swift */; };
+		F3907B622BE7D198002B2609 /* FortuneRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3907B612BE7D198002B2609 /* FortuneRequestBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 		F388E13A2BE244600033C7C2 /* yumemicodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yumemicodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F388E13E2BE244600033C7C2 /* yumemicodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITests.swift; sourceTree = "<group>"; };
 		F388E1402BE244600033C7C2 /* yumemicodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemicodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F3907B612BE7D198002B2609 /* APIBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBody.swift; sourceTree = "<group>"; };
+		F3907B612BE7D198002B2609 /* FortuneRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneRequestBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			children = (
 				F320B04C2BE31A1300B91285 /* DateRange.swift */,
 				F320B04E2BE3898D00B91285 /* APIResponse.swift */,
-				F3907B612BE7D198002B2609 /* APIBody.swift */,
+				F3907B612BE7D198002B2609 /* FortuneRequestBody.swift */,
 				F320B0502BE47FEA00B91285 /* MyProfile.swift */,
 				F320B0582BE5241F00B91285 /* DateExtension.swift */,
 			);
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3907B622BE7D198002B2609 /* APIBody.swift in Sources */,
+				F3907B622BE7D198002B2609 /* FortuneRequestBody.swift in Sources */,
 				F320B0572BE4E45700B91285 /* ProfileListView.swift in Sources */,
 				F388E1262BE2445F0033C7C2 /* ContentView.swift in Sources */,
 				F320B0512BE47FEA00B91285 /* MyProfile.swift in Sources */,

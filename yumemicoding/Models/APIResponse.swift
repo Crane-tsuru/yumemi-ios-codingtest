@@ -7,12 +7,13 @@
 
 import Foundation
 
-class MonthDay: Codable {
+
+final class MonthDay: Codable {
     let month: Int
     let day: Int
 }
 
-class ResponseStatus: Codable {
+final class ResponseStatus: Codable {
     let name: String
     let capital: String
     let citizenDay: MonthDay?
@@ -30,25 +31,22 @@ class ResponseStatus: Codable {
     }
 }
 
-
-class FortuneAPIViewController: ObservableObject {
-    @Published var responseStatus = ResponseStatus()
-    
-    let decoder: JSONDecoder = {
-      let decoder = JSONDecoder()
-      decoder.keyDecodingStrategy = .convertFromSnakeCase
-
-      return decoder
-    }()
-    
-    let encoder: JSONEncoder = {
+final class API {
+    private var encoder: JSONEncoder = {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
         
         return encoder
     }()
     
-    func getResponse(body: Body) async {
+    private let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+        return decoder
+    }()
+    
+    func fetchFortune(body: FortuneRequestBody) async throws -> ResponseStatus {
         let url = URL(string: "https://yumemi-ios-junior-engineer-codecheck.app.swift.cloud/my_fortune")!
         var request = URLRequest(url: url)
 
@@ -66,19 +64,47 @@ class FortuneAPIViewController: ObservableObject {
             
 //            print(String(data: data, encoding: .utf8) as Any) //debug
             
-            if let httpResponse = response as? HTTPURLResponse {
-                if 400 <= httpResponse.statusCode {
-                    print("status code error")
-                }
-            }
+//            if let httpResponse = response as? HTTPURLResponse {
+//                if 400 <= httpResponse.statusCode {
+//                    print("status code error")
+//                }
+//            }
             
-            self.responseStatus = try self.decoder.decode(ResponseStatus.self, from: data)
+            let fetchedResponse = try self.decoder.decode(ResponseStatus.self, from: data)
             print("success")
-            
-            
+            return fetchedResponse
         } catch  {
             print("Error : \(error)")
+            throw error
         }
         
+    }
+}
+
+@MainActor
+final class FortuneAPIViewModel: ObservableObject {
+    private let api = API()
+    @Published var responseStatus = ResponseStatus()
+    
+    let decoder: JSONDecoder = {
+      let decoder = JSONDecoder()
+      decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+      return decoder
+    }()
+    
+    let encoder: JSONEncoder = {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        
+        return encoder
+    }()
+    
+    func getResponse(body: FortuneRequestBody) async {
+        do {
+            responseStatus = try await api.fetchFortune(body: body)
+        } catch {
+            print(error)
+        }
     }
 }

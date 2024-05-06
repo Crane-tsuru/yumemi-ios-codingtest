@@ -7,7 +7,7 @@
 
 import Foundation
 
-class YearMonthDay: Encodable {
+final class YearMonthDay: Encodable {
     var year: Int
     var month: Int
     var day: Int
@@ -20,7 +20,7 @@ class YearMonthDay: Encodable {
 }
 
 
-struct Body: Encodable {
+struct FortuneRequestBody: Encodable {
     let name: String
     let birthday: YearMonthDay
     let bloodType: String
@@ -34,7 +34,7 @@ struct Body: Encodable {
     }
 }
 
-@MainActor func convertProfileToBody(myProfile: MyProfile) -> Body {
+func convertProfileToBody(myProfile: MyProfile) -> FortuneRequestBody {
     let today = Date().getYearMonthDay()
-    return Body(name: myProfile.name, birthday: myProfile.birthday.getYearMonthDay(), bloodType: myProfile.bloodType, today: today)
+    return FortuneRequestBody(name: myProfile.name, birthday: myProfile.birthday.getYearMonthDay(), bloodType: myProfile.bloodType, today: today)
 }
