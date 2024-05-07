@@ -14,9 +14,15 @@ import Foundation
 //}
 
 extension DateFormatter {
-    static func stringFormatYMD(date: Date) -> String {
+    static func MyStringFormat(date: Date) -> String {
         let df = DateFormatter()
-        df.dateFormat = "yyyy年mm月dd日"
+        df.locale = Locale(identifier: "ja_JP")
+        
+        df.dateStyle = .long
+        df.timeStyle = .none
+        
+//        df.calendar = Calendar(identifier: .japanese)
+//        df.dateFormat = "yyyy年mm月dd日"
         
         return df.string(from: date)
     }
