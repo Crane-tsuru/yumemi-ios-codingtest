@@ -40,7 +40,7 @@
 
 ## コードについて
 - フレームワーク：SwiftUI
-- 縦画面固定する用途で定義したAppDelegateにUIKitの機能を使用
+- 縦画面固定する用途で定義したAppDelegateにてUIKitの機能を使用
 
 ## ライブラリ
 - SwiftData
