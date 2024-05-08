@@ -12,7 +12,9 @@
 | ------ | ------ | ------ | ------ |
 | ![](README_Images/Home.png) | ![](README_Images/Profile_List.png)  | ![](README_Images/Result.png) |![](README_Images/Editting.png)  |
 
-
+| 横予定 | ダークモード |
+| ------ | ------ |
+| ![](README_Images/Portrait_Fixed)|![](README_Images/DarkMode)|
 
 ## セットアップ方式
 特になし。プロジェクトファイル内でライブラリは完結。
