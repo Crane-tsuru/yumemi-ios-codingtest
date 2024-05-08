@@ -10,7 +10,7 @@
 
 | ホーム | ステータスリスト | 占い結果 | ステータス編集 |
 | ------ | ------ | ------ | ------ |
-| ![](README_Images/Home.png) | ![](README_Images/Rusult.png)  | ![](README_Images/Result.png) |![](README_Images/Editting.png)  |
+| ![](README_Images/Home.png) | ![](README_Images/Profile_List.png)  | ![](README_Images/Result.png) |![](README_Images/Editting.png)  |
 
 
 
