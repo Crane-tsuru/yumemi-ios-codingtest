@@ -37,8 +37,9 @@ struct EditProfileView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .focused($inputNameDone)
                         .toolbar {
-                            ToolbarItem(placement: .keyboard) {
-//                                Spacer()
+                            
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Spacer()
                                 Button(action: {
                                     inputNameDone = false
                                 }) {
