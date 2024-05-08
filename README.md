@@ -14,7 +14,7 @@
 
 | 横予定 | ダークモード |
 | ------ | ------ |
-| ![](README_Images/Portrait_Fixed)|![](README_Images/DarkMode)|
+| ![](README_Images/Portrait_Fixed.png)|![](README_Images/DarkMode.png)|
 
 ## セットアップ方式
 特になし。プロジェクトファイル内でライブラリは完結。
