@@ -12,7 +12,7 @@
 | ------ | ------ | ------ | ------ |
 | ![](README_Images/Home.png) | ![](README_Images/Profile_List.png)  | ![](README_Images/Result.png) |![](README_Images/Editting.png)  |
 
-| 横固定 | ダークモード |
+| 縦固定 | ダークモード |
 | ------ | ------ |
 | ![](README_Images/Portrait_Fixed.png)|![](README_Images/DarkMode.png)|
 
