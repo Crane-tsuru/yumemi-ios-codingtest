@@ -15,8 +15,7 @@ struct ProfileDetailView: View {
         NavigationStack {
             List {
                 Text("名前: \(myProfile.name)")
-                Text("誕生日: \(DateFormatter.stringFormatYMD(date: myProfile.birthday))")
-                Text(myProfile.birthday.description)
+                Text("誕生日: \(DateFormatter.MyStringFormat(date: myProfile.birthday))")
                 Text("血液型: \(myProfile.bloodType)型")
             }
         }

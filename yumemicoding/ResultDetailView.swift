@@ -19,8 +19,19 @@ struct ResultDetailView: View {
         
         VStack {
             
-            AsyncImage(url: URL(string: fortuneAPIViewModel.responseStatus.logoUrl))
-                .scaleEffect(0.75)
+            AsyncImage(
+                url: URL(string: fortuneAPIViewModel.responseStatus.logoUrl),
+                content: { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: 300, maxHeight: 150)
+                },
+                placeholder: {
+                    ProgressView()
+                }
+            )
+                
             
             List {
                 
@@ -45,7 +56,7 @@ struct ResultDetailView: View {
                 }
                 
             }
-            
+            Spacer()
         }
         .onAppear{
             let APIBody = convertProfileToBody(myProfile: profile)

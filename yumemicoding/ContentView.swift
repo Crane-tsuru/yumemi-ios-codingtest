@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     @Environment(\.colorScheme) private var colorScheme
+    
+    @EnvironmentObject var sceneDelegate: SceneDelegate
     
     var body: some View {
         NavigationStack {
@@ -35,11 +37,18 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+        .onAppear(perform: {
+            if let window = sceneDelegate.window {
+                // 画面の向きを.portraitでロック
+                OrientationController.shared.lockOrientation(to: .portrait, onWindow: window)
+            }
+        })
     }
 }
 
 #Preview {
-    ContentView()
+    HomeView()
         .modelContainer(for: MyProfile.self)
+        .environmentObject(SceneDelegate())
 }
 

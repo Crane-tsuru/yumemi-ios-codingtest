@@ -17,6 +17,8 @@ struct EditProfileView: View {
     
     @Environment(\.modelContext) private var modelContext
     
+    @FocusState private var inputNameDone: Bool
+    
     var body: some View {
         
         ScrollView {
@@ -33,6 +35,18 @@ struct EditProfileView: View {
                     Text("名前")
                     TextField("山田太郎", text: $name)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($inputNameDone)
+                        .toolbar {
+                            
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Spacer()
+                                Button(action: {
+                                    inputNameDone = false
+                                }) {
+                                    Text("閉じる")
+                                }
+                            }
+                        }
                 }.padding()
                 
                 Text("誕生日").padding()

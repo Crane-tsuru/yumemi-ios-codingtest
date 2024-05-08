@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct yumemicodingApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @EnvironmentObject var sceneDelegate: SceneDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
         .modelContainer(for: MyProfile.self)
     }
