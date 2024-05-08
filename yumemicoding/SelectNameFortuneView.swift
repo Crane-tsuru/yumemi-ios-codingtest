@@ -11,7 +11,7 @@ import SwiftData
 struct SelectNameFortuneView: View {
     
     @Query private var profileList: [MyProfile]
-    @State var openSheet = false
+    @State var editSheet = false
     
     
     var body: some View {
@@ -25,15 +25,17 @@ struct SelectNameFortuneView: View {
             }
             .navigationTitle("占リスト")
             .navigationBarItems(trailing: Button(action: {
-                openSheet = true
+                editSheet = true
             }) {
                 Image(systemName: "plus")
                     .padding()
                     .scaleEffect(1.3)
             })
         }
-        .sheet(isPresented: $openSheet) {
-            EditProfileView(editSheet: $openSheet)
+        .sheet(isPresented: $editSheet) {
+            NavigationStack {
+                EditProfileView(editSheet: $editSheet)
+            }
         }
     }
 }

@@ -28,7 +28,9 @@ struct ProfileListView: View {
                 Image(systemName: "plus").padding().scaleEffect(1.3)
             })
         }.sheet(isPresented: $editSheet) {
-            EditProfileView(editSheet: $editSheet)
+            NavigationStack {
+                EditProfileView(editSheet: $editSheet)
+            }
         }
     }
 }
