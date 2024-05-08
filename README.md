@@ -8,6 +8,12 @@
 - iOS17以上
 - iPhoneのみ、縦画面固定
 
+| ホーム | ステータスリスト | 占い結果 | ステータス編集 |
+| ------ | ------ | ------ | ------ |
+| ![](README_Images/Home.png) | ![](README_Images/Rusult.png)  | ![](README_Images/Result.png) |![](README_Images/Editting.png)  |
+
+
+
 ## セットアップ方式
 特になし。プロジェクトファイル内でライブラリは完結。
 
